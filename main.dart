@@ -14,20 +14,17 @@ void main() {
 
 ///////////
 
-  // var listAge = filterVisitors([12, 14, 16, 17, 20], 13);
-  // print(listAge);
-
   List<int> filterVisitors(List<int> ages, int min) {
     List<int> filteredNumber = ages.where((age) => age > min).toList();
     return filteredNumber;
   }
 
-  List<int> oddsnumbers = [2, 3, 31];
-  int firstOfNumber = oddsnumbers.firstWhere((number) => number % 2 != 0);
-  print(firstOfNumber);
+  print(filterVisitors([16, 3, 20, 10], 11));
 
   int findOdds(List<int> oddsnumbers) {
     int firstOfNumber = oddsnumbers.firstWhere((number) => number % 2 != 0);
     return firstOfNumber;
   }
+
+  print(findOdds([2, 3, 31]));
 }
